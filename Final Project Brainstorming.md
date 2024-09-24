@@ -34,6 +34,8 @@ This idea is a parody of metroid prime, as a metroidvania, the player explores a
 | Other Beams | The player can unlock and then switch to other beams, such as the Wave Beam that shoots through walls, ice beam that freezes enemies temporarily, and plasma beam that pierces enemies |
 | Morph Ball | Morph into a Ball to roll around much faster, and roll through tight gaps [Image_Morphball](https://github.com/user-attachments/assets/db4b79e7-5d22-492c-976f-2e12a261430c) |
 | Suits | 2 Unlockable Suits, Varia suit and gravity suit. Varia suit reduces overall damage taken and provides resistance to heat, gravity suit further reduces damage and allows free movement in water |
+| Save/Recharge Stations | Throughout the game the player can find save and recharge stations, activating these will save the game and fully restore the player's health and any extra weapon ammo such as missile tanks |
+| Energy | The player has an energy meter which represents their health, taking damage reduces their max energy, and if it reaches 0, the player dies and is returned to their last save point, the player can find Energy Tanks throughout the environment that increase their max energy levels |
 
 ## Environment
 The player will be tasked with navigating several environments, they will first start off in a grassy forest area, then delve underground, the caves will slowly turn into an industrial area, then volcanic caves, and then finally the lab where they defeat the final boss and escape.
