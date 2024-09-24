@@ -1,4 +1,4 @@
-Markdown works likes discord.
+![image](https://github.com/user-attachments/assets/7dfd62bb-9054-471a-9e37-f7bae351e001)Markdown works likes discord.
 
  Titles
 # Title
@@ -51,7 +51,8 @@ Horizontal Rule
 
 [Link](www.google.com)
 
-image[fish lying on tha floor](https://i.pinimg.com/originals/11/a1/c4/11a1c472935156f45eb7fe1b99a33b65.jpg)
+image[fish lying on tha floor](![image](https://github.com/user-attachments/assets/41b54872-191f-43e3-b682-acf670c23413)
+)
 
  Table
 | Syntax | Description |
