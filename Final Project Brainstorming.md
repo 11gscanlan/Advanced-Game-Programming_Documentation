@@ -10,3 +10,10 @@ Powers (Speed Boost, Teleport, etc).
 ## Mechanics
 
 Rayman styled character - Semi-Open World
+
+
+# Idea 3: Metroid Prime (Metroidvania)
+## Mechanics
+Upgrades System ~ Displays a list of the player's upgrades
+Power Beam (Shoots Projectiles, Charged Shots, and Missiles)
+Morph Ball (Turn into a ball and roll around)
