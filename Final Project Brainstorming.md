@@ -1,8 +1,8 @@
-# Idea 1: Dark Deception styled Horror Game (Horror Pacman)
+# Idea 1: Mascot Horror Parody
 ## Mechanics
 Movement
 Map
-Powers (Speed Boost, Teleport, etc).
+Gimmick
 
 
 
