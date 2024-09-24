@@ -19,7 +19,7 @@ This idea is a parody of metroid prime, as a metroidvania, the player explores a
 | Upgrades System | Displays a list of the player's upgrades as they find them |
 | Power Beam | The player's main weapon, is able to fire Power Beams, Charge them to make them more powerful, and shoot missiles |
 | Other Beams | The player can unlock and then switch to other beams, such as the Wave Beam that shoots through walls, ice beam that freezes enemies temporarily, and plasma beam that pierces enemies |
-| Morph Ball | Morph into a Ball to roll around much faster, and roll through tight gaps [Image_Morphball](https://github.com/user-attachments/assets/db4b79e7-5d22-492c-976f-2e12a261430c)|
+| Morph Ball | Morph into a Ball to roll around much faster, and roll through tight gaps [Image_Morphball](https://github.com/user-attachments/assets/db4b79e7-5d22-492c-976f-2e12a261430c) |
 | Suits | 2 Unlockable Suits, Varia suit and gravity suit. Varia suit reduces overall damage taken and provides resistance to heat, gravity suit further reduces damage and allows free movement in water |
 
 ## Environment
