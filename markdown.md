@@ -3,21 +3,21 @@ Markdown works likes discord.
  Titles
 # Title
 ## Heading
-### Subheding
+### Subheading
 
 # Title
 ## Heading
-### Subheding
+### Subheading
 
  Basics
 **Is bold**
-*Is ittalics*
+*Is itallics*
 `Is code
 ~  ~Is Strikethru~
 
 
 Is bold
-Is ittalics
+Is itallics
 `Is code
 ~  ~Is Strikethru~
 
@@ -29,8 +29,8 @@ Is ittalics
 + numberd list
 + numberd list 2 eectric boogaloo
   * Extras
-  * Extra 2 electric boogaloo (i have only 1 joke leave me alone)
-+ numberd list 3 meeeeeeeeeeeep
+  * Extra 2 electric boogaloo
++ numberd list 3
 
 
 Is list
@@ -43,3 +43,6 @@ and list
 Extras
 Extra 2 electric boogaloo (i have only 1 joke leave me alone)
 + numberd list 3 meeeeeeeeeeeep
+
+## Paragraphs
+ <p>Paragraph</p>
