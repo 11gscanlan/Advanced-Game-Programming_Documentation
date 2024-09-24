@@ -18,5 +18,7 @@ Rayman styled character - Semi-Open World
 | ------ | ----------- |
 | Upgrades System | Displays a list of the player's upgrades |
 | Power Beam | The player's main weapon, is able to fire Power Beams, Charge them to make them more powerful, and shoot missiles |
+| Other Beams | The player can unlock and then switch to other beams, such as the Wave Beam that shoots through walls, ice beam that freezes enemies temporarily, and plasma beam that pierces enemies |
 | Morph Ball | Morph into a Ball to roll around much faster, and roll through tight gaps |
 | Suits | 2 Unlockable Suits, Varia suit and gravity suit. Varia suit reduces overall damage taken and provides resistance to heat, gravity suit further reduces damage and allows free movement in water |
+|
