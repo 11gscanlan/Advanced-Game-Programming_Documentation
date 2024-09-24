@@ -60,3 +60,11 @@ image[fish lying on tha floor](![image](https://github.com/user-attachments/asse
 | Header | Title |
 | Paragraph | Text |
 | Paragraph | Text |
+
+```
+{
+ "firstName": "John",
+ "lastName": "Smith",
+ "age": 25
+}
+```
