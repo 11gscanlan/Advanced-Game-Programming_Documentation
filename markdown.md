@@ -44,5 +44,10 @@ Extras
 Extra 2 electric boogaloo (i have only 1 joke leave me alone)
 + numberd list 3 meeeeeeeeeeeep
 
-## Paragraphs
- <p>Paragraph</p>
+`code`
+
+Horizontal Rule
+---
+
+[Link](www.google.com)
+image[fish lying on tha floor](https://i.pinimg.com/originals/11/a1/c4/11a1c472935156f45eb7fe1b99a33b65.jpg)
