@@ -20,7 +20,7 @@ Rayman styled character - Semi-Open World
 ## Summary
 This idea is a parody of metroid prime, as a metroidvania, the player explores a large interconnected world exploring, defeating enemies and collecting items. The player starts out with a basic power beam, and later unlocks abilities such as the morph ball, varia suit,
 ## Mechanics
-| Syntax | Description |
+| Mechanic | Summary |
 | ------ | ----------- |
 | Upgrades System | Displays a list of the player's upgrades as they find them |
 | Power Beam | The player's main weapon, is able to fire Power Beams, Charge them to make them more powerful, and shoot missiles |
