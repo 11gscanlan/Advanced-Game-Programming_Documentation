@@ -49,7 +49,7 @@ Extra 2 electric boogaloo (i have only 1 joke leave me alone)
 Horizontal Rule
 ---
 
-[Link](www.google.com)
+[Link](https://www.markdownguide.org/cheat-sheet/)
 
 image[fish lying on tha floor](![image](https://github.com/user-attachments/assets/41b54872-191f-43e3-b682-acf670c23413)
 )
