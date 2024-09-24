@@ -50,4 +50,12 @@ Horizontal Rule
 ---
 
 [Link](www.google.com)
+
 image[fish lying on tha floor](https://i.pinimg.com/originals/11/a1/c4/11a1c472935156f45eb7fe1b99a33b65.jpg)
+
+ Table
+| Syntax | Description |
+| ------ | ----------- |
+| Header | Title |
+| Paragraph | Text |
+| Paragraph | Text |
