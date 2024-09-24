@@ -5,7 +5,13 @@
 
 
 # Idea 2: 3D Platformer
+## Summary
+The 3D Platformer Idea is inspired by Sonic the Hedgehog and Rayman. The game emphasises platforming, though there are also sections where the player can move fast to run through larger areas. There are treasures to collect, and powerups that give you either temporary or permanent powers.
+
+The player character is designed after Rayman, having no limbs allows for more creative controls as the player can throw their fists to grab ledges or swing bars, or spin them very fast to glide through the air. The lack of limbs also makes the player more acrobatic, performing flips in the air, rolling on the floor and other moves like wall running/jumping, railgrinding, and attacking enemies.
+
 ## Mechanics
+
 
 Rayman styled character - Semi-Open World
 
