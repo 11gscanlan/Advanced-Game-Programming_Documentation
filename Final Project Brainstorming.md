@@ -11,9 +11,16 @@ The 3D Platformer Idea is inspired by Sonic the Hedgehog and Rayman. The game em
 The player character is designed after Rayman, having no limbs allows for more creative controls as the player can throw their fists to grab ledges or swing bars, or spin them very fast to glide through the air. The lack of limbs also makes the player more acrobatic, performing flips in the air, rolling on the floor and other moves like wall running/jumping, railgrinding, and attacking enemies.
 
 ## Mechanics
+| Mechanic | Summary |
+| -------- | ------- |
+| Speed | The player, inspired by Sonic, is able to gain momentum to move very fast, the momentum is influenced by the environment, you accelerate faster when running downhill, and running uphill will make you lose speed |
+| Gliding | By spinning their arms, the player can glide through the air for a few seconds, this gives them more air control and allows them to make larger floatier jumps to cover large distances |
+| Grabbing | The player can lunge their arm forward to grab enemies, pulling themselves in for a powerful kick attack that sends the enemy flying, this can be used for combat and also traversal, the player can also grab contextual items like swing bars or ziplines, for example |
+| Currency | The player can collect gems as they run around the environment, they also drop from enemies, the gems will allow you to head to a shop to buy cosmetics or extra upgrades for the character |
+| Upgrades | The player can unlock various upgrades throughout the game, these can include new moves such as a double jump, speed dash, charged spin attacks, and faster speed |
+| Health | The player has a health system, taking hit reduces health and grabbing healing items increases their health, if the player loses their health then they are returned to the last checkpoint |
+| Stamina | The player has a stamina meter that recharges over time, the meter is drained when using certain skills like gliding or speed dashing. Upgrades include boosting max stamina or increasing the recharge rate |
 
-
-Rayman styled character - Semi-Open World
 
 
 # Idea 3: Metroid Prime (Metroidvania)
