@@ -44,4 +44,4 @@ The player will be tasked with navigating several environments, they will first 
 The player will face a few different enemies that they must defeat, some enemies won't be vulnerable to specific weapons fire.
 
 ## Scope
-Due to this being a 10 Week Unit, the majority of my plan will be saved for the final project. For this 10 week unit, my main focus will be on the Upgrade system, the Health system, the Map System, and the Inventory System
+Due to this being a 10 Week Unit, the majority of my plan will be saved for the final project. For this 10 week unit, my focus will be primarily on the initial FPS mechanics utilising the power beam and upgrade system mechanics, and also the Morph Ball mechanics. I will also add the upgrades list, and the energy system.
