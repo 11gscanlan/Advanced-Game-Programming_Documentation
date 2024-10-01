@@ -161,3 +161,6 @@ int main()
     return 0;
 }
 ```
+
+I had to ask ChatGPT why my code wasn't working so I pasted it into chat GPT and asked it to find any errors, and it told me that, when rewriting the items.name nodes to items.value, I had also accidentally replaced an items.size with value thus breaking the code
+It also told me that attempting to fix the values by capitalising them was inconsistant and I should uncapitalise them, which made sense as I only capitalised them in the first place to see if that would fix the issue, therefore I didn't need them to still be capitalized
