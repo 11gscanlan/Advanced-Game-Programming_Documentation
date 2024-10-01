@@ -1,10 +1,10 @@
 # [TASK NAME]
 
-[Module Name]
+# Advanced Games Programming
 
-[Student Name]
+## George Scanlan
 
-[Student ID]
+## 2202038
 
 ## Research
 
