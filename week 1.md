@@ -4,11 +4,16 @@ https://chatgpt.com/ (accessed 1/10/2024)
 
 Used to explain bubble sorting in cpp, as well as to generate a cheat sheet for cpp to help me understand it better
 
+## Research
+- ChatGPT
+- geeksforgeeks
+
 ## Development Process:
 
 
 ### Challenges
 One of the main challenges I faced was the difficulty I have with my understanding of C++, therefore I needed to also spend time researching the basics of C++ to help with my understanding of what to do.
+
 
 ```
 #include <iostream>
@@ -155,12 +160,13 @@ int main()
             
         } else {
             std::cout << "Sorry, I don't understand that command :(" << std::endl;
-    }
+        }
     }
     
     return 0;
 }
 ```
 
-I had to ask ChatGPT why my code wasn't working so I pasted it into chat GPT and asked it to find any errors, and it told me that, when rewriting the items.name nodes to items.value, I had also accidentally replaced an items.size with value thus breaking the code
+I had to ask ChatGPT why my code wasn't working so I pasted it into chat GPT and asked it to find any errors, and it told me that, when rewriting the items.name nodes to items.value, I had also accidentally replaced an items.size with value thus breaking the code.
+
 It also told me that attempting to fix the values by capitalising them was inconsistant and I should uncapitalise them, which made sense as I only capitalised them in the first place to see if that would fix the issue, therefore I didn't need them to still be capitalized
