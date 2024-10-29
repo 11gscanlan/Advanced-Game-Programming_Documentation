@@ -156,6 +156,7 @@ https://www.youtube.com/watch?v=ZmIzHtglnMM
 
 ### Face Reflection
 The next feature I wanted to have was the player's face reflecting on the visor if they were in close proximity to a missile explosion.
+I took a photo of my face to use as a prototype face proof of concept.
 
 ## Beginning the process of De-Nintendo-ifying the game.
 During the standup for this week, I reflected on what I had created so far, and realised I was slowly exhausting the ideas I had for the different mechanics, though one large thought was brought up which I had been figuring for a while; that Nintendo could *probably* sue me if I published the game on Itch.io, especially since a lot of the mechanics I was making are directly inspired by the mechanics from Metroid Prime. So a large hurdle I now had to tackle was making it so that wouldn't happen, I had to retheme the game and make it something unique.
@@ -171,7 +172,7 @@ I made a table of what needed to be replaced, that way I could keep track of wha
 
 So I began brainstorming, my immediate thoughts were directed at the Morph Ball, as that ability is a staple of the metroid series, I needed a way to have a mechanic similar to that, without being a direct copy. I remembered some old Newgrounds flash games I used to play, one of which being Slime Labs; that has the player rolling around and platforming as a slime ball, squeezing through vents, and navigating the environment. So I had a great idea; to retheme the player character into a slime humanoid, and turn the morph ball into the player reforming back into their original slime ball form, allowing them to roll around and fit into smaller gaps that they couldn't normally.
 
-
+I used a material I had created last year for the technical art unit, where the mesh's faces extrude towards nearby surfaces to replicate the extrusion a slime ball would face when pushed against the ground.
 
 ![alt text](IMG_SlimeBallShowcase.png)
 
@@ -191,6 +192,6 @@ My focus was now on the weapons. I had to split the power beam into 4 unique wea
 ### Plasma Beam
 
 ### Missile Launcher
-The missile launcher was a tricky one as it was available regardless of your currently selected weapon. Though I very quickly thought of a way to circumvent this issue.
+For the missile launcher, I thought the best solution was to have the rocket launcher be a seperate part of the player's arsenal that they can use independently to the weapons.
 
-Doom Eternal has a shoulder-mounted rocket launcher that is seperate from the rest of your arsenal that you can use at a moment's notice.
+I based the new rocket launcher off of Doom Eternal, which has a shoulder-mounted rocket launcher. Except I wanted to keep the ammo system instead of using the cooldown timer that Doom Eternal uses.
