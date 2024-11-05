@@ -174,11 +174,11 @@ So I began brainstorming, my immediate thoughts were directed at the Morph Ball,
 
 I used a material I had created last year for the technical art unit, where the mesh's faces extrude towards nearby surfaces to replicate the extrusion a slime ball would face when pushed against the ground.
 
-![alt text](IMG_SlimeBallShowcase.png)
+![alt text](Images/IMG_SlimeBallShowcase.png)
 
 After creating the slime ball, I made a new texture for the visor reflection to match the new character.
 
-![alt text](IMG_SlimeFaceReflection.png)
+![alt text](Images/IMG_SlimeFaceReflection.png)
 
 ## Weapon time boiiiiiii
 My focus was now on the weapons. I had to split the power beam into 4 unique weapons and also alter what they do to make them unique instead of copying Metroid Prime.
