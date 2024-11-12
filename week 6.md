@@ -14,9 +14,9 @@ Since I finished changing the art assets to make my game unique, I wanted to mov
 I first chose to further develop the Enemy AI so it could actually move and attack the player.
 
 
-### Inventory System
 
 
 ### Water
 
-### Door
+
+### Rope Swinging

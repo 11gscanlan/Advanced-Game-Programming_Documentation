@@ -10,4 +10,4 @@
 
 ### Object Pooling
 
-### Changing the Walk Cycle
+### Changing the Walk Cycle (Suggestion from Liam)
