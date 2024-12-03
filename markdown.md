@@ -67,7 +67,13 @@ image[fish lying on tha floor](![image](https://github.com/user-attachments/asse
 }
 ```
 [BlueprintUE](https://blueprintue.com/)
+
 [Figma](https://www.figma.com/login)
+
 [GDB online Debugger](https://www.onlinegdb.com)
+
 [Trello Board](https://trello.com/b/r5WuwVuA/metroid-prime)
+
 [ChatGPT](https://chatgpt.com/)
+
+[SoloLearn](https://www.sololearn.com/en/)

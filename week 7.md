@@ -11,7 +11,7 @@ We started by creating the class initialization, where each class has specific s
 
 After entering the first case for Warrior, we decided to open ChatGPT and ask it to generate the rest of the switch cases as that way we wouldn't have to repeat the code 8 more times, which helped save a lot of time as it not only made the rest of the switch cases, but also randomised the values too.
 
-```
+``` cpp
 switch (characterClass) {
  case characterClass::Warrior
  character.strength = 10
@@ -27,7 +27,7 @@ switch (characterClass) {
 From there we wanted to test that the code worked, so wanted to create the function that outputted the selection of our chosen class along with its stats.
 Our first character was a Mage named "Steve".
 
-``` 
+``` cpp
 Character* warrior = CharacterFactory::CreateCharacter("Steve", CharacterClass::Warrior);
 	
 std::cout << "Character Info:" << std::endl;
@@ -35,7 +35,7 @@ warrior->PrintCharacterInfo();
 ```
 Where "Print Character Info" was defined as:
 
-```
+``` cpp
     virtual void PrintCharacterInfo()
     {
         std::cout << "Name: " << name << ", Class: " << static_cast<int>(characterClass) << std::endl;
@@ -54,7 +54,7 @@ We almost immediately noticed that the class was being returned as **2** and not
 We then attempted to brute force different methods to try and get the class to display as a string, to no avail.
 We once again asked ChatGPT how we could go about converting the array element into a string instead of an integer. It told us to create a seperate function that we call instead that gets the array element and converts the value to a string, so we created the function **toString** with help from ChatGPT.
 
-```
+``` cpp
 // Function to convert enum to string
 std::string toString(CharacterClass characterClass) {
 	switch (characterClass) {
@@ -90,7 +90,7 @@ After that we asked ChatGPT to see if there was a way to simplify the method for
 ChatGPT told us that we could simplify the code by instead using an array for each class that stores the stats,
 and then when retrieving the stats it finds the specific value in the array.
 
-```
+``` cpp
 const std::map<CharacterClass, std::vector<int>> CharacterFactory::classStats = {
 	{CharacterClass::Warrior, {10, 8, 9, 7, 6, 5, 4}},
 	{CharacterClass::Rogue, {7, 10, 6, 8, 6, 9, 8}},
@@ -105,7 +105,7 @@ const std::map<CharacterClass, std::vector<int>> CharacterFactory::classStats = 
 ```
 ## Cleanup Causing the decorators to be generated. Oops.
 
-```
+``` cpp
 int main()
 {
     // Create characters using the factory
@@ -141,7 +141,7 @@ I left to go to the toilet at this time, so I wasn't there for most of it, but Z
 After that, we tried a few tests, and added some failsafes incase the player inputs the wrong value to prevent errors, then after that, the task was complete.
 
 ### Full Code:
-```
+``` cpp
 #include <iostream>
 #include <string>
 #include <map>
