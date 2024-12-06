@@ -176,14 +176,20 @@ I used a material I had created last year for the technical art unit, where the 
 
 ![alt text](Images/IMG_SlimeBallShowcase.png)
 
-After creating the slime ball, I made a new texture for the visor reflection to match the new character.
+After creating the slimeball material, I changed the image of the face reflection to one I drew which better resembled a slime.
 
 ![alt text](Images/IMG_SlimeFaceReflection.png)
 
-## Weapon time boiiiiiii
+## Replacing the Weapons
 My focus was now on the weapons. I had to split the power beam into 4 unique weapons and also alter what they do to make them unique instead of copying Metroid Prime.
 
 ### Power Beam
+I decided to change the power beam into a basic sci-fi energy pistol.
+I created a basic mesh in Maya to demonstrate what I was aiming for. As the general idea for the new weapon system was multiple different looking guns instead of an arm cannon that transformed between 4 different states.
+
+![alt text](Images/IMG_Week4_PlasmaPistol_Temp.png)
+
+After that I simply swapped out the arm cannon for the new mesh, and changed the projectile to a blue cylinder.
 
 ### Wave Beam
 

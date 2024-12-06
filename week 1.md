@@ -1,172 +1,35 @@
-https://www.geeksforgeeks.org/bubble-sort-in-cpp/ (accessed 1/10/2024)
 
-https://chatgpt.com/ (accessed 1/10/2024)
+# Week 1
 
-Used to explain bubble sorting in cpp, as well as to generate a cheat sheet for cpp to help me understand it better
+### Editing the initial Third Person character
 
-## Research
-- ChatGPT
-- geeksforgeeks
+- Attaching Camera Boom to mesh's head for viewbob
+- Editing the physics, making the character floatier with better air control
 
-## Development Process:
+### Creating File structure
 
+To make the file structure organised and easy to navigate, I made a  series of base folders where I would organise everything into. Such as Blueprints, Materials and Meshes. I then colour coded them to their respective colours to keep them organised.
 
-### Challenges
-One of the main challenges I faced was the difficulty I have with my understanding of C++, therefore I needed to also spend time researching the basics of C++ to help with my understanding of what to do.
+![](Images/IMG_ColourCodedFolders.png)
 
+### Adding sound notifies to the mesh
 
-```
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <string>
+- Footsteps
+- Landing
+- Animation Functions
 
-class Item
-{
-public:
-    std::string name;
-    int value;
-    
-    Item(std::string n, int v) : name(n), value(v) {}
+### Adding a separate spring arm and then adding the viewmodel / arm cannon
+- I created a seperate spring arm which I attached to the player's camera to act as the viewmodel. I made sure to check the "use pawn control rotation" box as that way, the spring arm would be constantly facing in the direction the player is looking.
 
-};
+- From there I added the mesh, which was just a cube, to use as the positioning for where the arm cannon would go.
 
-// Function to display the inventory
-void DisplayInventory(const std::vector<Item>& items)
-{
-    for (const auto& item : items)
-    {
-        std::cout << item.name << ": " << item.value << std::endl;
-    }
-}
+### Character sounds
+I wanted to create movement sounds for the player, so I went into the animation graph and added a series of "anim notify" flags that played footstep noises when triggered. I did the same for the anim graph for landing from falling, making a seperate noise trigger for that too.
 
+![alt text](Images/IMG_AnimGraph_Footsteps.png)
 
-// Function to sort items by name (alphabetically)
-void SortByName(std::vector<Item>& items, bool ascending = true)
-{
-    int n = items.size();
-    if (ascending)
-        
-        // For loop that corresponds to the number of items that need to be sorted
-        for (int i = 0; i < n - 1; i++) {
-            // Last i elements are already in place
-            for (int j = 0; j < n - i - 1; j++) {
-                // Comparing adjacent elements
-                if (items[j].name > items[j + 1].name)
-                    // Swap items if in the wrong order
-                    std::swap(items[j], items[j + 1]);
-                
-            }
-        } 
-    else
-        for (int i = 0; i < n - 1; i++) {
-            // Last i elements are already in place
-            for (int j = 0; j < n - i - 1; j++) {
-                // Comparing adjacent elements
-                if (items[j].name < items[j + 1].name)
-                    // Swap items if in the wrong order
-                    std::swap(items[j], items[j + 1]);
-            }
-        }
-         
-}
+## Video Showcase
 
-// Function that sorts by value, if true then sort ascending
-void SortByValue(std::vector<Item>& items, bool ascending = true)
-{
-    int v = items.size();
-    if (ascending)
-        
-        // For loop that corresponds to the number of items that need to be sorted
-        for (int i = 0; i < v - 1; i++) {
-            // Last i elements are already in place
-            for (int j = 0; j < v - i - 1; j++) {
-                // Comparing adjacent elements
-                if (items[j].value > items[j + 1].value)
-                    // Swap items if in the wrong order
-                    std::swap(items[j], items[j + 1]);
-                
-            }
-        } 
-// Else, sort descending
-    else
-        for (int i = 0; i < v - 1; i++) {
-            // Last i elements are already in place
-            for (int j = 0; j < v - i - 1; j++) {
-                // Comparing adjacent elements
-                if (items[j].value < items[j + 1].value)
-                    // Swap items if in the wrong order
-                    std::swap(items[j], items[j + 1]);
-            }
-        }
-         
-}
+This video shows off my progress at the end of the first week.
 
-
-
-
-int main()
-{
-    std::vector<Item> items = {
-        Item("Sword", 150),
-        Item("Potion", 50),
-        Item("Shield", 100),
-        Item("Bow", 120),
-        Item("Helmet", 80),
-        Item("My diamond sword-sword you can't afford-ford my diamond sword-sword", 6969)
-    };
-
-    std::cout << "Original Inventory:" << std::endl;
-    DisplayInventory(items);
-    
-    std::string userInput;
-    
-    // Prompt the user for input
-    std::cout << "Would you like to sort your inventory by 'name' or 'value'?";
-    std::getline(std::cin, userInput);
-    
-    // Check the input using if, else if, or else
-    if (userInput == "name") {
-        
-        std::cout << "Would you like the list to be 'ascending' or 'descending'?";
-        std::getline(std::cin, userInput);
-        
-        if (userInput == "ascending") {
-            std::cout << "\nSorted by Name (Ascending):" << std::endl;
-            SortByName(items, true); // Sort by name in ascending order
-            DisplayInventory(items);
-            
-        } else if (userInput == "descending") {
-            std::cout << "\nSorted by Name (Descending):" << std::endl;
-            SortByName(items, false); // Sort by name in descending order
-            DisplayInventory(items); 
-            
-        } else {
-            std::cout << "Sorry, I don't understand that command :(" << std::endl;
-        }
-    } else {
-        std::cout << "Would you like the list to be 'ascending' or 'descending'?";
-        std::getline(std::cin, userInput);
-        
-        if (userInput == "ascending") {
-            std::cout << "\nSorted by Name (Ascending):" << std::endl;
-            SortByValue(items, true); // Sort by name in ascending order
-            DisplayInventory(items);
-            
-        } else if (userInput == "descending") {
-            std::cout << "\nSorted by Name (Descending):" << std::endl;
-            SortByValue(items, false); // Sort by name in descending order
-            DisplayInventory(items); 
-            
-        } else {
-            std::cout << "Sorry, I don't understand that command :(" << std::endl;
-        }
-    }
-    
-    return 0;
-}
-```
-
-I had to ask ChatGPT why my code wasn't working so I pasted it into chat GPT and asked it to find any errors, and it told me that, when rewriting the items.name nodes to items.value, I had also accidentally replaced an items.size with value thus breaking the code.
-
-It also told me that attempting to fix the values by capitalising them was irrelevant and I should uncapitalise them.
+<video controls src="Videos/Project_Week1.mp4" title="Title"></video>
