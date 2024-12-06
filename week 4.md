@@ -15,7 +15,7 @@ How To Make A Spline-Based Side-Scroller Camera In Unreal Engine (2023) At: http
 The next feature I wanted to have was the player's face reflecting on the visor if they were in close proximity to a missile explosion.
 I took a photo of my face to use as a prototype face proof of concept.
 
-## Beginning the process of De-Nintendo-ifying the game.
+## Beginning the process of removing the Nintendo assets
 During the standup for this week, I reflected on what I had created so far, and realised I was slowly exhausting the ideas I had for the different mechanics, though one large thought was brought up which I had been figuring for a while; that Nintendo could *probably* sue me if I published the game on Itch.io, especially since a lot of the mechanics I was making are directly inspired by the mechanics from Metroid Prime. So a large hurdle I now had to tackle was making it so that wouldn't happen, I had to retheme the game and make it something unique.
 
 I made a table of what needed to be replaced, that way I could keep track of what needed to be changed;

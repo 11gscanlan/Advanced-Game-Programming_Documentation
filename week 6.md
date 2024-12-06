@@ -15,8 +15,9 @@ Since I finished changing the art assets to make my game unique, I wanted to mov
 ### Enemy AI
 I first chose to further develop the Enemy AI so it could actually move and attack the player.
 
+I created a behaviour tree, and two task nodes. One task node was set to wander to a random point, and the other made the enemy shoot 3 projectiles at the player.
 
-
+![alt text](Images/IMG_EnemyAI.png)
 
 ### Water
 
