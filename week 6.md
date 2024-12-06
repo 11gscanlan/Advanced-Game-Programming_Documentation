@@ -20,6 +20,17 @@ I created a behaviour tree, and two task nodes. One task node was set to wander 
 ![alt text](Images/IMG_EnemyAI.png)
 
 ### Water
+I created a box collision that, when the player entered, set a flag that the player was underwater. In the player character's event tick, I would activate a node that damaged the player every second they were in the water.
 
+<iframe src="https://blueprintue.com/render/yrtw-8ir/" scrolling="no" allowfullscreen></iframe>
 
 ### Rope Swinging
+I wanted a system where the player could swing on ropes. It was intially part of my feature creep, but I had finished all of the ideas I wanted to add.
+I experimented with physics-based cable systems, but they didn't work properly with what I wanted to do.
+
+When the player is in range of a hook, they must press and hold E. It will then create a hook actor, which will repeatedly swing the player back and forth in a simulated swing animation.
+When the player releases E, they will be launched in the direction they are currently swinging.
+
+<iframe src="https://blueprintue.com/render/nypmyf39/" scrolling="no" allowfullscreen></iframe>
+
+---

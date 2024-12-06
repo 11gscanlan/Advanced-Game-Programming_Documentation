@@ -3,11 +3,7 @@
 
 ### Arm Cannon mesh
 
-- Model
-- UV Unwrapping
-- Texturing
-- Rigging
-- Animations
+![alt text](Images/IMG_OldArmCannon.png)
 
 ---
 
@@ -46,14 +42,11 @@ After that, I created a quick script that changed the beam. It is controlled by 
 
 ---
 
-- Wave Beam
-- Ice Beam
-- Plasma Beam
+The other 3 beams initially were just copies of the default beam, but with the colour of the beam changed.
 
 ### Visor Texture Widget
+For the visor, I created a user widget that the player character created at the "event begin play" node. Most of the work on the visor was visual work, without many mechanics actually added.
 
-
-### Test Area
 
 ## Project State Demonstration Video
 

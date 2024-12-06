@@ -36,8 +36,15 @@ And another node specifically when attempting to exit the morph ball which would
 
 <iframe src="https://blueprintue.com/render/7owpqxgy/" scrolling="no" allowfullscreen></iframe>
 
+[Morph Ball Demonstration](https://www.youtube.com/watch?v=oIiFYUPg1F4)
+
 ## Morph Ball Tunnels
 
-To create tunnels that the player can move through, I created a spline mesh
+To create tunnels that the player can move through, I created an actor with a spline, then in the construction script, I added a spline mesh component.
+Then by utilising a for loop set to the total number of spline points, find the location and tangent at each spline point, and set the attach and end point to them. This meant whenever I moved the spline or added a new point, it would create a new tunnel mesh that bent to fit the spline.
+
+<iframe src="https://blueprintue.com/render/nsb6l36p/" scrolling="no" allowfullscreen></iframe>
+
+![alt text](Images/IMG_SplineTunnel.png)
 
 ## Targeting System

@@ -22,14 +22,12 @@ To make the file structure organised and easy to navigate, I made a  series of b
 - From there I added the mesh, which was just a cube, to use as the positioning for where the arm cannon would go.
 
 ---
-
 ### Character sounds
 I wanted to create movement sounds for the player, so I went into the animation graph and added a series of "anim notify" flags that played footstep noises when triggered. I did the same for the anim graph for landing from falling, making a seperate noise trigger for that too.
 
 ![](Images/IMG_AnimGraph_Footsteps.png)
 
 ---
-
 ### Video Showcase
 
 [This video](https://youtu.be/WTIQAuz8Gws) shows off my progress at the end of the first week.
