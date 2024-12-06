@@ -66,7 +66,10 @@ image[fish lying on tha floor](![image](https://github.com/user-attachments/asse
  "age": 25
 }
 ```
-[BlueprintUE](https://blueprintue.com/)
+
+## Useful Links 
+
+[BlueprintUE (for referencing blueprints)](https://blueprintue.com/)
 
 [Figma](https://www.figma.com/login)
 
@@ -76,4 +79,4 @@ image[fish lying on tha floor](![image](https://github.com/user-attachments/asse
 
 [ChatGPT](https://chatgpt.com/)
 
-[SoloLearn](https://www.sololearn.com/en/)
+[SoloLearn (for learning C++)](https://www.sololearn.com/en/)

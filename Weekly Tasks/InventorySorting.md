@@ -7,6 +7,7 @@ https://chatgpt.com/ (accessed 1/10/2024)
 Used to explain bubble sorting in cpp, as well as to generate a cheat sheet for cpp to help me understand it better
 
 ## Research
+
 - ChatGPT
 - geeksforgeeks
 

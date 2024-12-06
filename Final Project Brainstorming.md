@@ -1,6 +1,6 @@
 # Idea 1: Horror Game
 ## Summary
-
+A spooky horror game. The player must navigate an environment collecting objectives and avoiding the monster hunting them throughout the stage. The player must run or hide from the monster to avoid being caught, and make it out alive.
 
 
 
@@ -23,7 +23,7 @@ The player character is designed after Rayman, having no limbs allows for more c
 
 
 
-# Idea 3: Metroid Prime (Metroidvania)
+# Idea 3: Metroid Prime inspired Sci-Fi FPS
 ## Summary
 This idea is a parody of metroid prime, as a metroidvania, the player explores a large interconnected world exploring, defeating enemies and collecting items. The player starts out with a basic power beam, and later unlocks abilities such as the morph ball, varia suit,
 ## Mechanics
