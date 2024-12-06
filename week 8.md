@@ -15,3 +15,9 @@ The player can skip the first hook if they jump in slimeball state since it's no
 Having an insta-kill fail state for missing the rope swing was a bit harsh.
 
 ## Making the Slimeball a timed ability.
+
+
+## Boss Fight
+
+
+## Win Screen
