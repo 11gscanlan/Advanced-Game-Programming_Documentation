@@ -26,7 +26,7 @@ To make the file structure organised and easy to navigate, I made a  series of b
 ### Character sounds
 I wanted to create movement sounds for the player, so I went into the animation graph and added a series of "anim notify" flags that played footstep noises when triggered. I did the same for the anim graph for landing from falling, making a seperate noise trigger for that too.
 
-![alt text](Images/IMG_AnimGraph_Footsteps.png)
+![](Images/IMG_AnimGraph_Footsteps.png)
 
 ---
 

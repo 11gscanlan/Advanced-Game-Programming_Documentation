@@ -5,8 +5,10 @@ https://www.raylib.com/
 
 ## Lesson Task: Data Driven movement system
 
-## Project Development
 
+# Week 6
+
+## Project Development
 
 Since I finished changing the art assets to make my game unique, I wanted to move away from the art aspect of my project to continue focusing on the devlelopment of the mechanics over the next two weeks. I had three primary mechanics I wanted to add, that being the Inventory System, Enemy AI, and Environmental Objects such as Doors and Lab Vents.
 

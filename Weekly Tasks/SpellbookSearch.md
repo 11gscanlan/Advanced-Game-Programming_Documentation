@@ -1,4 +1,12 @@
 ## Task 5: Spellbook Search
+
+
+## Research
+
+Developing A Basic Search Engine In C++: An Adventure In Coding - Code With C (2024) At: https://www.codewithc.com/developing-a-basic-search-engine-in-c/ (Accessed  28/10/2024).
+
+---
+
 The task for this week was to create a sorting algorithm that sorted a long list based on various criteria.
 
 
@@ -26,6 +34,8 @@ std::vector<Spell> SearchSpells(const std::vector<Spell>& spellList, const std::
     return results;
 }
 ```
+Whilst the code worked fine when you used uppercase words such as "Damage", it wouldn't work properly if you spelled it "damage". At the time I wanted to add a system to convert the text to lowercase but I didn't know how, and decided to instead continue working on my project as I had finished the task.
+
 ---
 ### Full Code:
 

@@ -38,7 +38,7 @@ Creating missiles was as simple as recreating the primary fire script, however I
 
 ### Switching Beams
 
-I created a blueprint interface that tracked which beam state the player's arm cannon was in, which would be used at the point of firing the arm cannon to switch which beam to fire.
+I created an enumerator that tracked which beam state the player's arm cannon was in, which would be used at the point of firing the arm cannon to switch which beam to fire.
 
 After that, I created a quick script that changed the beam. It is controlled by hitting the 1,2,3 or 4 keys to execute the 4 different nodes to swap beams.
 
@@ -51,3 +51,10 @@ After that, I created a quick script that changed the beam. It is controlled by 
 - Plasma Beam
 
 ### Visor Texture Widget
+
+
+### Test Area
+
+## Project State Demonstration Video
+
+[Project State Week 2](https://youtu.be/IUVH7G2YVbI)

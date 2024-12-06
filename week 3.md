@@ -22,15 +22,22 @@ For the animation blueprint, I created switches between 4 different states, whic
 
 
 ## New Beam VFX
+With the new arm cannon, I changed the VFX for the arm cannon, including adding a muzzle flash effect.
+
+[Video Demonstration of Arm Cannon and New Beam VFX](https://youtu.be/ZAQUvjmRYOM)
 
 ## Morph Ball
 
+For the morph ball, I created two different functions, one which could be used to toggle the morph ball physics, shrink the player's size and make the camera go third person;
+
+<iframe src="https://blueprintue.com/render/do_n9stf/" scrolling="no" allowfullscreen></iframe>
+
+And another node specifically when attempting to exit the morph ball which would box trace above the player to see if they were in an enclosed place, and prevent the player from exiting the morph ball if they were.
+
+<iframe src="https://blueprintue.com/render/7owpqxgy/" scrolling="no" allowfullscreen></iframe>
+
 ## Morph Ball Tunnels
 
+To create tunnels that the player can move through, I created a spline mesh
+
 ## Targeting System
-
-## Increase Near-Clip Plane
-
-## Charge Beams
-
-## Aim Lag Visor

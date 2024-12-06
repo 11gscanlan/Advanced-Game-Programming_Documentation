@@ -1,157 +1,14 @@
 # Week 4
 
-## Class Weekly Task
 
-
-Full Code:
-``` cpp
-using System;
-using System.Collections.Generic;
-
-// The DialogueNode class represents a single dialogue option in the tree
-public class DialogueNode
-{
-    public string DialogueText { get; set; }      // The dialogue text for the node
-    public List<DialogueChoice> Choices { get; set; }  // Choices for the player to make
-
-    // Constructor for initializing dialogue nodes
-    public DialogueNode(string dialogueText)
-    {
-        DialogueText = dialogueText;
-        Choices = new List<DialogueChoice>();  // Initialize the list of choices
-    }
-
-    // Method to add a choice to this node
-    public void AddChoice(string choiceText, DialogueNode nextNode)
-    {
-        Choices.Add(new DialogueChoice(choiceText, nextNode));
-    }
-}
-
-// The DialogueChoice class represents a player's choice and the resulting dialogue node
-public class DialogueChoice
-{
-    public string ChoiceText { get; set; }  // Text of the player's choice
-    public DialogueNode NextNode { get; set; }  // The next dialogue node based on the player's choice
-
-    // Constructor for initializing a choice
-    public DialogueChoice(string choiceText, DialogueNode nextNode)
-    {
-        ChoiceText = choiceText;
-        NextNode = nextNode;
-    }
-}
-
-// The DialogueSystem class represents the overall dialogue system
-public class DialogueSystem
-{
-    public DialogueNode RootNode { get; private set; }  // The starting point of the conversation
-    private DialogueNode CurrentNode;  // Tracks the current node in the conversation
-
-    // Constructor that sets the root node
-    public DialogueSystem(DialogueNode rootNode)
-    {
-        RootNode = rootNode;
-        CurrentNode = rootNode;  // Start at the root node
-    }
-
-    // Method to build the dialogue tree
-    public void BuildDialogueTree()
-    {
-        // Example of building the dialogue tree:
-        DialogueNode introduction = new DialogueNode("Hello! How can I help you today?");
-        DialogueNode weather = new DialogueNode("The weather is great! It's sunny outside.");
-        DialogueNode directions = new DialogueNode("You need to head north and then turn left.");
-        DialogueNode goodfarewell = new DialogueNode("Goodbye! Have a nice day.");
-        DialogueNode badfarewell = new DialogueNode("bye. Have a day.");
-
-        // Add choices to the root node
-        introduction.AddChoice("Tell me about the weather.", weather);
-        introduction.AddChoice("I need directions.", directions);
-        introduction.AddChoice("Nothing, just passing by.", badfarewell);
-
-        // Add choices to the weather node
-        weather.AddChoice("Thanks!", goodfarewell);
-
-        // Add choices to the directions node
-        directions.AddChoice("Thanks for the directions!", goodfarewell);
-
-        // Now, set the root node in the DialogueSystem to the introduction
-        RootNode = introduction;
-        CurrentNode = RootNode; // Reset the current node to the root after building the tree
-    }
-// Method to start the dialogue
-    public void StartDialogue()
-    {
-        while (true)
-        {
-            // Display the current node's dialogue text
-            Console.Clear();
-            Console.WriteLine(CurrentNode.DialogueText);
-
-            // If there are no choices, end the conversation
-            if (CurrentNode.Choices.Count == 0)
-            {
-                Console.WriteLine("End of conversation.");
-                break;
-            }
-
-            // Display the player's choices
-            Console.WriteLine("\nChoose an option:");
-            for (int i = 0; i < CurrentNode.Choices.Count; i++)
-            {
-                Console.WriteLine($"{i + 1}. {CurrentNode.Choices[i].ChoiceText}");
-            }
-
-            // Get the player's choice
-            int choice = 0;
-            while (choice < 1  choice > CurrentNode.Choices.Count)
-            {
-                Console.Write("Enter the number of your choice: ");
-                bool isValidChoice = int.TryParse(Console.ReadLine(), out choice);
-
-                if (!isValidChoice  choice < 1 || choice > CurrentNode.Choices.Count)
-                {
-                    Console.WriteLine("Invalid choice. Please try again.");
-                }
-            }
-
-            // Navigate to the next dialogue node based on the player's choice
-            CurrentNode = CurrentNode.Choices[choice - 1].NextNode;
-        }
-    }
-}
-
-// The Program class starts the dialogue system
-public class Program
-{
-    public static void Main(string[] args)
-    {
-        // Build the dialogue tree and start the dialogue
-        DialogueSystem dialogueSystem = new DialogueSystem(null);  // Initialize with null, will set RootNode later
-        dialogueSystem.BuildDialogueTree();  // Build the dialogue structure
-        dialogueSystem.StartDialogue();      // Start navigating through the dialogue
-    }
-}
-```
-
-## Project Development
-
-### Aim Lag Visor
+### Aim Lag Visor + Crosshair
 To recreate the HUD having a lag effect, I created a Widget actor to use instead of the widget I had on the player's viewport. I set it to move to the player camera's view every tick, and added a spring arm with rotation lag so the HUD would lag slightly, which required I go back and make a new HUD with a larger size so more of it would be visible when it swayed, instead of visibly cutting off.
 
 
-
-### Clamp Look Speed
-
-### Crosshair
-
 ### Fixed Tunnel Camera
 
-Spline-Based Camera Position (Accessed on 21/10/24)
-https://www.youtube.com/watch?v=ZmIzHtglnMM
+How To Make A Spline-Based Side-Scroller Camera In Unreal Engine (2023) At: https://www.youtube.com/watch?v=ZmIzHtglnMM (Accessed  21/10/2024).
 
-### Additions to Ice Beam
 
 
 ### Face Reflection
@@ -172,10 +29,15 @@ I made a table of what needed to be replaced, that way I could keep track of wha
 
 So I began brainstorming, my immediate thoughts were directed at the Morph Ball, as that ability is a staple of the metroid series, I needed a way to have a mechanic similar to that, without being a direct copy. I remembered some old Newgrounds flash games I used to play, one of which being Slime Labs; that has the player rolling around and platforming as a slime ball, squeezing through vents, and navigating the environment. So I had a great idea; to retheme the player character into a slime humanoid, and turn the morph ball into the player reforming back into their original slime ball form, allowing them to roll around and fit into smaller gaps that they couldn't normally.
 
-I used a material I had created last year for the technical art unit, where the mesh's faces extrude towards nearby surfaces to replicate the extrusion a slime ball would face when pushed against the ground.
+---
+### New Morph-Ball: The Slimeball
+I used a material I had created last year for the technical art unit, where the mesh's faces extrude towards nearby surfaces to replicate the extrusion a slime ball would face when pushed against the ground. It did this by using a combination of a "distance to nearest surface" node, a "VertexNormalWS" node, and several other math-ey nodes.
+
+<iframe src="https://blueprintue.com/render/q7kj54jb/" scrolling="no" allowfullscreen></iframe>
 
 ![alt text](Images/IMG_SlimeBallShowcase.png)
 
+---
 After creating the slimeball material, I changed the image of the face reflection to one I drew which better resembled a slime.
 
 ![alt text](Images/IMG_SlimeFaceReflection.png)
@@ -187,17 +49,37 @@ My focus was now on the weapons. I had to split the power beam into 4 unique wea
 I decided to change the power beam into a basic sci-fi energy pistol.
 I created a basic mesh in Maya to demonstrate what I was aiming for. As the general idea for the new weapon system was multiple different looking guns instead of an arm cannon that transformed between 4 different states.
 
-![alt text](Images/IMG_Week4_PlasmaPistol_Temp.png)
+![alt text](Images/IMG_IonPistol.png)
 
 After that I simply swapped out the arm cannon for the new mesh, and changed the projectile to a blue cylinder.
 
+---
 ### Wave Beam
+For the Wave Beam I created a sciency electric gun that has different prongs chanelling electricity into the center. I changed the properties of the gun so it quickly fired while holding down left click.
 
+![alt text](Images/IMG_ElectroScrambler.png)
+
+---
 ### Ice Beam
+For the Ice Beam, I created a gun that was based around chanelling cryogenic energy in the back, which is then fired out of the barrel in the form of condensed ice bricks which explode on contact with walls and freeze enemies.
+The projectile was therefore kept largely the same as there was no need to change anything.
 
+![alt text](Images/IMG_IceCannon.png)
+
+---
 ### Plasma Beam
+The Plasma beam saw the most drastic change, I changed it so it fires arcing globules of acidic goop that bounce on walls before exploding dealing splash damage.
 
+![alt text](Images/IMG_AcidLauncher.png)
+
+---
 ### Missile Launcher
 For the missile launcher, I thought the best solution was to have the rocket launcher be a seperate part of the player's arsenal that they can use independently to the weapons.
 
-I based the new rocket launcher off of Doom Eternal, which has a shoulder-mounted rocket launcher. Except I wanted to keep the ammo system instead of using the cooldown timer that Doom Eternal uses.
+I based the new rocket launcher off of Doom Eternal, which has a shoulder-mounted rocket launcher. So I moved a mesh into the top left corner of the player's view and set that to be the origin point of where missiles are shot from.
+
+---
+### Switching Guns
+With the new weapons created, I changed the script for swapping weapons so instead of changing an enumerator to swap an animation state, it would directly swap the mesh and play an animation of the player drawing a new gun.
+
+<iframe src="https://blueprintue.com/render/_c3e_gb3/" scrolling="no" allowfullscreen></iframe>

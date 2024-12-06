@@ -1,3 +1,4 @@
+# Week 8
 
 ## Testing Feedback
 -Slimeball-
@@ -12,3 +13,5 @@ Some controls aren't explained well (Rope Swinging)
 Level is too open-ended, so a player might not see everything on their way to the boss room
 The player can skip the first hook if they jump in slimeball state since it's not made obvious that it exists
 Having an insta-kill fail state for missing the rope swing was a bit harsh.
+
+## Making the Slimeball a timed ability.
